@@ -24,6 +24,8 @@ function techbros_features(){
     register_nav_menu('headerMenuLocation', 'Header Menu Location');
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
+    add_image_size('authorSquare', 250, 250, true);
+    add_image_size('authorPortrait', 250, 290, true);
 
 }
 add_action('after_setup_theme', 'techbros_features');

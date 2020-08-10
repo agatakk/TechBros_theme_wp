@@ -14,11 +14,38 @@ while(have_posts()){
   
     <section class="main main--contact">
             <section class="concept">
-                <h3 class="concept__title"><?php the_title()?></h3>
-                <div class="concept__par">
-                   <?php the_content()?>
+            <?php
+            $infoLoop = new WP_Query(array(
+                'post_type' => array('program', 'details',)
+            ));
+
+         
+            while($infoLoop->have_posts()){
+                $infoLoop->the_post();
+
+           
+                $relatedInfo = get_field('related_info');
+                if($relatedInfo){
+                    foreach($relatedInfo as $info) {
                 
-                </div>
+                        ?>
+                       
+                       <a href="<?php echo get_the_permalink($info)?>"><h3 class="concept__title"><?php echo get_the_title($info)?></h3></a>
+                        <div class="concept__par">      
+                        
+                        <?php 
+                        echo get_the_content($info);
+                        ?>
+
+                        </div>
+    
+                    <?php
+                     }
+                    }
+                    
+                }
+                wp_reset_postdata()
+                ?>
             </section>
             <section>
             
@@ -79,4 +106,18 @@ while(have_posts()){
 
 get_footer();
 ?>
-    
+
+               
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+
+                   
