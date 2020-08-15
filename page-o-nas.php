@@ -3,6 +3,7 @@ get_header();
 
 while(have_posts()){
     the_post(); ?>
+    
      <header class='main-header main-header--post'>
         <div class="header header--post">
             <h2 class='header__sub-header1 header--tax header__sub-header1--post'>TAX</h2>
@@ -13,10 +14,11 @@ while(have_posts()){
     </header>
   
     <section class="main main--contact">
-            <section class="concept">
+           
             <?php
             $infoLoop = new WP_Query(array(
-                'post_type' => array('program', 'details',)
+                'post_type' => array('details', 'info'),
+                
             ));
 
          
@@ -27,49 +29,65 @@ while(have_posts()){
                 $relatedInfo = get_field('related_info');
                 if($relatedInfo){
                     foreach($relatedInfo as $info) {
-                
+                    
                         ?>
-                       
-                       <a href="<?php echo get_the_permalink($info)?>"><h3 class="concept__title"><?php echo get_the_title($info)?></h3></a>
+                    <section class="concept">
+                      <h3 class="concept__title"><?php echo get_the_title($info)?></h3>
                         <div class="concept__par">      
                         
                         <?php 
-                        echo get_the_content($info);
+                        echo get_the_content($infoID);
                         ?>
 
                         </div>
-    
+                        </section>
                     <?php
                      }
-                    }
+                    }?>
                     
-                }
+
+
+
+                    
+               <?php }
                 wp_reset_postdata()
                 ?>
-            </section>
-            <section>
-            
-                <?php
-                $relatedPeople = get_field('related_person');
-                if($relatedPeople){
-                    foreach($relatedPeople as $person) {
+        
+            <section class="authors-about">
+            <?php
+         $relatedPeople = get_field('related_person');
+     
+         if($relatedPeople){
+             foreach($relatedPeople as $person) {
+                $postID = $person->ID;
+                $post_object = get_post($postID);       
+                 ?>
                 
-                        ?>
-                       
-                        <div class="authors__name authors-about__name">
-                            <a href="<?php echo get_the_permalink($person)?>">
-                            <img src="<?php echo get_the_post_thumbnail_url($person, 'authorSquare'); ?>" alt="Zdjęcie autora">
-                            <h4 class="authors-about__title"><?php echo get_the_title($person)?></h4>
-                            </a>
-                            <!-- <h4 class="authors-about__title"><a href="<?php echo get_the_permalink($person)?>"> <?php echo get_the_title($person);?></a></h4> -->
-                            
-                        </div>
-    
-                    <?php
-                    }
+                 <div class="authors__name authors-about__name">
+                     <a href="<?php echo get_the_permalink($person)?>">
+                     <img src="<?php echo get_the_post_thumbnail_url($person, 'authorSquare'); ?>" alt="Zdjęcie autora">
+                     <h4 class="authors-about__title"><?php echo get_the_title($person)?></h4>
+                     </a>
+                     <span class="authors-about__email"><?php echo get_field('email_address', $postID)?></span>
+                     <!-- <h4 class="authors-about__title"><a href="<?php echo get_the_permalink($person)?>"> <?php echo get_the_title($person);?></a></h4> -->
+                     
+                 </div>
+                     <div class="concept__par">
                     
-                }
-                ?>
+                     <?php  echo $person->post_content;?>
+                     
+                     </div>
+    
+             <?php
+             }
+             
+         }
+    
+        
+     ?>
+    
+                                   
+               
             </section>
             <!-- 
                 <div class="authors__author authors-about__author">

@@ -1183,7 +1183,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .contact-form {
-    width: 30%;
+    width: 100%;
   }
 }
 
@@ -1216,6 +1216,15 @@ body {
   outline: 1px solid #FF6F64;
 }
 
+.contact-form__btn{
+  display: block;
+  margin-top: 1.5rem;
+}
+
+span.wpcf7-list-item{
+  margin:0;
+}
+
 .main--contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1224,6 +1233,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 1024px){
+  .main--contact{
+    flex-direction: row;
+  }
 }
 
 .main .concept {
