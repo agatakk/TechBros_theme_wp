@@ -1240,7 +1240,9 @@ span.wpcf7-list-item{
     flex-direction: row;
   }
 }
-
+.main--about{
+  flex-direction: column;
+}
 .main .concept {
   margin: 0 auto;
   padding: 2rem;

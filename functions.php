@@ -1,16 +1,36 @@
 <?php
+function pageBanner(){
+    //php logic will live here
+    ?>
+    <header class='main-header main-header--post'>
+        <div class="header header--post">
+            <h2 class='header__sub-header1 header--tax header__sub-header1--post'>TAX</h2>
+            <h2 class='header__sub-header1 header__sub-header1--legal header__sub-header1--post'>LEGAL</h2>
+            <h1 class='header__main header--tech header__main--post'>TECH</h1>
+            <h2 class='header__sub-header2 header__sub-header2--post'>NA CHŁODNO</h2>
+        </div>
+        <div class="content">
+            <div class="search-bar">
+                <input type="text" class="search-bar__input" placeholder="Szukaj" aria-label="search">
+                <button class="search-bar__submit" aria-label="submit search"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    <?php
+}
 function techbros_files() {
     wp_enqueue_style('custom_google_fonts_raleway', 'https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
     wp_enqueue_style('custom_google_fonts_oswald', 'https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap');
     wp_enqueue_style('custom_google_fonts_merriweather', 'https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,400&display=swap');
+    wp_enqueue_style('font-awsome', 'https://use.fontawesome.com/releases/v5.14.0/css/all.css"');
     
     if(strstr($_SERVER['SERVER_NAME'], 'localhost')){
         wp_enqueue_script('tech-bros-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
         
     }else{
         wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/undefined'), NULL, '1.0', true);
-        wp_enqueue_script('tech-bros-js', get_theme_file_uri('/bundled-assets/scripts.cb6d001a86586c2e6e68.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.cb6d001a86586c2e6e68.css'));
+        wp_enqueue_script('tech-bros-js', get_theme_file_uri('/bundled-assets/scripts.d87b065a2327f44560b5.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.d87b065a2327f44560b5.css'));
     }
     
     // wp_enqueue_style('techbros_main_styles', get_stylesheet_uri());

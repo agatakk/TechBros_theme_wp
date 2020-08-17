@@ -1,19 +1,8 @@
 <?php
 get_header();
+pageBanner();
 ?>
- <header class='main-header main-header--post'>
-        <div class="header header--post">
-            <h2 class='header__sub-header1 header--tax header__sub-header1--post'>TAX</h2>
-            <h2 class='header__sub-header1 header__sub-header1--legal header__sub-header1--post'>LEGAL</h2>
-            <h1 class='header__main header--tech header__main--post'>TECH</h1>
-            <h2 class='header__sub-header2 header__sub-header2--post'>NA CHŁODNO</h2>
-        </div>
-        <div class="content">
-            <div class="search-bar">
-                <input type="text" class="search-bar__input" placeholder="Szukaj" aria-label="search">
-                <button class="search-bar__submit" aria-label="submit search"><i class="fas fa-search"></i></button>
-        </div>
-    </header>
+
     <!-- MAIN -->
     <section class="main">
 
@@ -137,30 +126,7 @@ get_header();
                 </div>
                    -->
         </section>
-        <section class="sidebar sidebar--post">
-            <section class="sidebar__section sidebar__categories-and-tags">
-                <h3 class="sidebar__title">Kategorie</h3>
-                <h3 class="sidebar__title">Tagi</h3>
-            </section>
-            <section class="sidebar__section  sidebar_archives">
-                <h3 class="sidebar__title">Archiwum</h3>
-            </section>
-            <section class ='sidebar__section  sidebar__authors authors'>
-                <h3 class="sidebar__title">Autorzy</h3>
-                <div class="authors__summary">
-                    <h3 class="authors__name">MACIEJ KOKOT</h3>
-                    <img src="img/Maciek-Kokot.png" alt="Zdjęcie Macieja Kokota" class="authors__img img--maciej">
-                    <p class="authors__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus ut pulvinar egestas. Aliquam ultrices elit elit, eu elementum risus sodales eget. um dolor sit amet, consectetur adipia. um dolor sit amet
-                    </p>
-                </div>
-                <div class="authors__summary">
-                    <h3 class="authors__name">WOJCIECH KOKOT</h3>
-                    <img src="img/wojciech_kokot.png" alt="Zdjęcie Wojciecha Kokota" class="authors__img img--wojciech">
-                    <p class="authors__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus ut pulvinar egestas. Aliquam ultrices elit elit, eu elementum risus sodales eget. um dolor sit amet
-                    </p>
-                </div>
-            </section>
-        </section>
+        <?php get_sidebar()?>
 
     </section>
 

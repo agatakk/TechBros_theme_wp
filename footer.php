@@ -15,9 +15,10 @@
         <section class="footer__find-us footer__info">
             <h4 class="footer__title">ZNAJDŹ NAS</h4>
             <div class='footer__icons'>
-                <i><img src="<?php echo get_theme_file_uri('img/iconfinder_linkedin-logo-1_1269935.png')?>" alt="Logo LinkedIn"></i>
-                <i><img src="<?php echo get_theme_file_uri('img/twitter.png')?>" alt="Logo Twitter"></i>
-                <i><img src="<?php echo get_theme_file_uri('img/facebook.png')?>" alt="Logo facebook"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                
             </div>
         </section>
     </footer>
