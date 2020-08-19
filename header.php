@@ -6,7 +6,7 @@
     <?php wp_head();?>
     
 </head>
-<body> 
+<body style="background-image: url(<?php echo get_theme_file_uri('~/../img/brain-chip-icon.png')?>)" > 
 <nav class='main-nav'>
         <a href="<?php echo get_home_url();?>"><img src="<?php echo get_theme_file_uri('~/../img/Group53.png')?>" alt="logo" class="main-nav__logo"></a>
         <ul class="main-menu">

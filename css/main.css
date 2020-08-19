@@ -30,7 +30,7 @@ ul {
 
 body {
   position: relative;
-  background: #E0E1E2 url("/img/brain-chip-icon.png") no-repeat fixed top right;
+  background: #E0E1E2 no-repeat fixed top right;
   background-size: contain;
   font-family: "Raleway";
 }

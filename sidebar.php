@@ -1,13 +1,13 @@
 <section class="sidebar">
-    <section class="sidebar__section sidebar__categories-and-tags">
+    <div class="sidebar__section sidebar__categories-and-tags">
         <h3 class="sidebar__title">Kategorie</h3>
        
         <h3 class="sidebar__title">Tagi</h3>
-    </section>
-    <section class="sidebar__section  sidebar_archives">
+    </div>
+    <div class="sidebar__section  sidebar_archives">
         <h3 class="sidebar__title">Archiwum</h3>
-    </section>
-    <section class ='sidebar__section  sidebar__authors authors'>
+    </div>
+    <div class ='sidebar__section  sidebar__authors authors'>
        <a href="<?php echo get_post_type_archive_link('details')?>"><h3 class="sidebar__title">Autorzy</h3></a>
         <?php
         $homepageInfo = new wp_Query(array(
@@ -40,4 +40,5 @@
 
         ?>
         
+    </div>
     </section>
