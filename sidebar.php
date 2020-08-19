@@ -6,6 +6,21 @@
     </div>
     <div class="sidebar__section  sidebar_archives">
         <h3 class="sidebar__title">Archiwum</h3>
+        <h4 class='sidebar__title--year'><?php wp_get_archives(array(
+            'type'=>'yearly',
+            'after'=>'<span> >></span>'
+
+        ))?></h4>
+       
+        <h5 class="sidebar__title--month sidebar__none">
+        <?php
+        $monthlyArchives = wp_get_archives(array(
+            'type'=>'monthly', 
+            'after'=>'<span> >></span> <h6 class="sidebar__title--post sidebar__none">COKOLWIEK</h6>',
+        )); 
+        ?>
+        </h5>
+        
     </div>
     <div class ='sidebar__section  sidebar__authors authors'>
        <a href="<?php echo get_post_type_archive_link('details')?>"><h3 class="sidebar__title">Autorzy</h3></a>
