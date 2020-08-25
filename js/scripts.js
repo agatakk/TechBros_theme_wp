@@ -53,7 +53,7 @@ sidebarYear.addEventListener('click', () => {
 })
 sidebarMonths.forEach((sidebarMonth)=>{
     sidebarMonth.addEventListener('click', () => {
-        console.log(sidebarMonth.textContent);
+        console.log(sidebarMonth.textContent,);
         sidebarTitles.forEach((sidebarTitle)=>{
             sidebarTitle.classList.toggle('sidebar__none');
             console.log(sidebarTitle.textContent);
