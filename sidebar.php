@@ -1,8 +1,23 @@
 <section class="sidebar">
     <div class="sidebar__section sidebar__categories-and-tags">
         <h3 class="sidebar__title">Kategorie</h3>
-       
+        <div class="sidebar__cat-tags-list">
+
+        <?php wp_list_categories(array(
+           'title_li' => '', 
+           'show_count' => 'true',
+           
+        ))?>
+        </div>
         <h3 class="sidebar__title">Tagi</h3>
+        <div class="sidebar__cat-tags-list">
+            <?php wp_tag_cloud(array(
+                'smallest' => 1,
+                'largest' =>1.5,
+                'unit' => 'rem',
+                
+            ))?>
+        </div>
     </div>
     <div class="sidebar__section  sidebar_archives">
         <h3 class="sidebar__title">Archiwum</h3>

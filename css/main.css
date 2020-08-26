@@ -365,7 +365,23 @@ body {
 .sidebar__none{
   display: none;
 }
+.sidebar__cat-tags-list{
+  padding: 0 1.5rem;
+}
+.sidebar__cat-tags-list a{
+  color: #FF6F64;
+  margin:.5rem 0;
+  line-height: 1.2;
+}
 
+.sidebar__cat-tags-list .cat-item{
+      list-style: none;
+      display: inline-block;
+      margin: .3rem
+}
+.sidebar__cat-tags-list .cat-item a{
+  color: jj;
+}
 .authors__summary {
   margin-top: 1rem;
 }
