@@ -4,7 +4,7 @@ function wp_custom_archive($args = ''){
     $defaults = array(
         'limit' => '',
         'format' => 'html', 'before' => '',
-        'after'=> '', 'show_post_count' => false,
+        'after'=> '', 'show_post_count' => true,
         'echo' => 1,
     );
     $r = wp_parse_args($args, $defaults);
@@ -98,8 +98,8 @@ function techbros_files() {
         
     }else{
         wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/undefined'), NULL, '1.0', true);
-        wp_enqueue_script('tech-bros-js', get_theme_file_uri('/bundled-assets/scripts.2a069a775f9b5b45def0.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.2a069a775f9b5b45def0.css'));
+        wp_enqueue_script('tech-bros-js', get_theme_file_uri('/bundled-assets/scripts.c081be5527fc337ff228.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.c081be5527fc337ff228.css'));
     }
     
     // wp_enqueue_style('techbros_main_styles', get_stylesheet_uri());

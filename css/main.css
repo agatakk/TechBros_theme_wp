@@ -333,6 +333,35 @@ body {
   margin-top: 5px;
 }
 
+.sidebar__archlist{
+  padding: 1.5rem;
+}
+.sidebar__year{
+  position: relative;
+  font-size: 20px;
+  font-family: 'Merriweather';
+  color: #FF6F64;
+  margin: .8rem 0;
+}
+.sidebar__year::after{
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 2px;
+  display: block;
+  background-color: #FF6F64;
+  margin-top: 5px;
+}
+.sidebar__year:hover{
+  cursor: pointer;
+}
+.sidebar__archlist>li:not(.sidebar__year){
+  margin: 1rem;
+}
+.sidebar__archlist>li:not(.sidebar__year) a{
+  color: black;
+ 
+}
 .sidebar__none{
   display: none;
 }

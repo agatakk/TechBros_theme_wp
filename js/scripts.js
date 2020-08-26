@@ -31,32 +31,21 @@ const navSlideIn = function(){
 }
 
 burger.addEventListener('click', navSlideIn);
-console.log(line1);
+
 
 //sideabar
+const sidebarYears = document.querySelectorAll('.sidebar__year');
+const sidebarMonths = document.querySelectorAll('.sidebar__archlist>li:not(.sidebar__year)');
 
-const sidebarYear = document.querySelector('.sidebar__title--year');
-const sidebarMonths = document.querySelectorAll('.sidebar__title--month');
-const sidebarTitles = document.querySelectorAll('.sidebar__title--post');
-
-console.log(sidebarYear, sidebarMonths, sidebarTitles);
-
-sidebarYear.addEventListener('click', () => {
-    console.log('year2020');
-    sidebarMonths.forEach((sidebarMonth)=>{
-        sidebarMonth.classList.toggle('sidebar__none');
+// sidebarMonths.forEach((month)=>{
+//     console.log(month);
+// })
+sidebarMonths.forEach(month=>month.classList.add('sidebar__none'));
+sidebarYears.forEach((year)=>{
+    year.addEventListener('click', ()=>{
+        sidebarMonths.forEach((month)=>{
+            console.log(month);
+            month.classList.toggle('sidebar__none');
+        });
     })
-    // if(sidebarTitle.className!='sidebar__none'){
-    //     console.log('title');
-    //     sidebarTitle.classList.add('sidebar__none');
-    // }
 })
-sidebarMonths.forEach((sidebarMonth)=>{
-    sidebarMonth.addEventListener('click', () => {
-        console.log(sidebarMonth.textContent,);
-        sidebarTitles.forEach((sidebarTitle)=>{
-            sidebarTitle.classList.toggle('sidebar__none');
-            console.log(sidebarTitle.textContent);
-        })
-    })
-});
