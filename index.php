@@ -4,7 +4,7 @@ pageBanner();
 ?>
 
     <!-- MAIN -->
-<section class="main">
+<section class="main main--archives">
 
     <section class ='latest-posts latest-posts--archives'>
         <?php
@@ -23,9 +23,11 @@ pageBanner();
                                 <h4 class="post-info__date-author post-info__date-author--posts"><?php the_author_posts_link() ?></h4>
                         </div>
                         </div>
-                    <div class="latest-posts__par"><?php
-                    the_excerpt();
-                    ?> </div>
+                    <div class="latest-posts__par">
+                    <?php
+                    echo wp_trim_words(get_the_content(), 30);
+                    ?>
+                </div>
                     <button class="latest-posts__btn btn">Czytaj dalej</button>
                 </div>
 
@@ -33,16 +35,16 @@ pageBanner();
             <?php
             }
             ?>
-            <br><div>
-            <?php
-            echo paginate_links();
-            ?>
-
-            </div>
     </section>
-   <!--KONIEC LATEST POSTS-->
+    <div class='main__pagination'>
+    <?php
+    echo paginate_links();
+    ?>
+
+    </div>
+    <!--KONIEC LATEST POSTS-->
    <!--SIDEBAR-->
-  <?php get_sidebar()?>
+  <?php get_sidebar('for-archives')?>
 </section>
 <!--KONIEC MAIN-->
 

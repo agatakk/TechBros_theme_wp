@@ -286,6 +286,7 @@ body {
 
 .main {
   width: 100%;
+  
   height: auto;
   display: -ms-grid;
   display: grid;
@@ -294,7 +295,28 @@ body {
   -ms-grid-rows: 1fr 2fr;
       grid-template-rows: 1fr 2fr;
 }
+@media screen and (min-width: 1920px){
+    .main{
+      padding: 0 10vw;
+      grid-template-columns: 20% auto;
+    }
+}
 
+.main--archives{
+  grid-template-rows: 1fr 5%;
+}
+.main__pagination{
+  grid-area: 2/2/3/3;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__pagination a {
+  margin: .3rem;
+  color: black;
+}
 .sidebar {
   height: auto;
   -ms-grid-row: 1;
@@ -380,7 +402,7 @@ body {
       margin: .3rem
 }
 .sidebar__cat-tags-list .cat-item a{
-  color: jj;
+  color: #FF6F64;
 }
 .authors__summary {
   margin-top: 1rem;
@@ -590,13 +612,20 @@ body {
 }
 
 .latest-posts__abstract {
+  position: relative;
   width: 48%;
+  height: 40vh;
   padding: 1.5rem;
   -webkit-box-shadow: 0 3px 8px rgba(1, 1, 1, 0.3);
           box-shadow: 0 3px 8px rgba(1, 1, 1, 0.3);
   background-color: #FFFFFF;
-  margin-left: 5px;
-  margin-top: 5px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+@media screen and (max-width: 1370px){
+  .latest-posts__abstract{
+    height:65vh;
+  }
 }
 
 .latest-posts__title {
@@ -604,6 +633,7 @@ body {
   font-family: "Oswald";
   font-size: 28px;
   margin: .5rem;
+  padding: .5rem;
   line-height: 1.2;
 }
 
@@ -617,8 +647,11 @@ body {
 }
 
 .latest-posts__btn {
-  margin-left: 53%;
-  margin-bottom: .5rem;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  /* margin-left: 53%;
+  margin-bottom: .5rem; */
 }
 
 .footer {
@@ -722,8 +755,15 @@ body {
     -ms-grid-columns: 25% auto;
         grid-template-columns: 25% auto;
   }
+  .main--archives {
+    grid-template-rows: 1fr 2%;
+}
   .post-info__subtitles {
     width: 100%;
+  } 
+  .latest-posts__abstract{
+    width: 70%;
+    height: 50vh;
   }
   .latest-posts__btn {
     margin-left: 20%;
@@ -859,6 +899,10 @@ body {
   }
   .latest-posts__btn {
     margin-left: 45%;
+    position: static;
+  }
+  .latest-posts__abstract{
+    height: auto;
   }
 }
 
