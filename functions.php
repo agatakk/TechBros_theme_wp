@@ -68,8 +68,9 @@ function wp_custom_archive($args = ''){
         return $output;  
 }
 
-function pageBanner(){
-    //php logic will live here
+function pageBanner($args=NULL){
+  
+       
     ?>
     <header class='main-header main-header--post'>
         <div class="header header--post">
@@ -79,10 +80,13 @@ function pageBanner(){
             <h2 class='header__sub-header2 header__sub-header2--post'>NA CHŁODNO</h2>
         </div>
         <div class="content">
-            <div class="search-bar">
+            <div class="archives_back"><a href="<?php echo site_url('/blog')?>"> <?php echo $args['home']?> </a></div>
+            <span><?php echo $args['arrows']?></span>
+            <p class='content__page-title'><?php echo $args['title']?></p>
+            <!-- <div class="search-bar">
                 <input type="text" class="search-bar__input" placeholder="Szukaj" aria-label="search">
                 <button class="search-bar__submit" aria-label="submit search"><i class="fas fa-search"></i></button>
-            </div>
+            </div> -->
         </div>
     </header>
     <?php
@@ -98,8 +102,8 @@ function techbros_files() {
         
     }else{
         wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/undefined'), NULL, '1.0', true);
-        wp_enqueue_script('tech-bros-js', get_theme_file_uri('/bundled-assets/scripts.90f8793dd96e0f3a182d.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.90f8793dd96e0f3a182d.css'));
+        wp_enqueue_script('tech-bros-js', get_theme_file_uri('/bundled-assets/scripts.9752c0a1c0e6902cd940.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.9752c0a1c0e6902cd940.css'));
     }
     
     // wp_enqueue_style('techbros_main_styles', get_stylesheet_uri());

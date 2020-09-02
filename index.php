@@ -1,6 +1,8 @@
 <?php
 get_header();
-pageBanner();
+pageBanner(array(
+    'title'=> 'TechBros BLOG',
+));
 ?>
 
     <!-- MAIN -->

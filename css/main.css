@@ -283,7 +283,39 @@ body {
 .main-header .call-to-action__btn {
   margin-left: calc(45% - 150px);
 }
+.main-header .content__back-to-blog{
+    display: flex;
+    color: white;
+    background-color: #6ebaf6;
+    padding: 0.65rem 1.5rem;
+    margin: 0 .2rem;
+    letter-spacing: 1px;
+}
+.main-header .content__back-to-blog span{
+    font-weight: 700;
+    font-family: 'Merriweather';
+}
+.main-header .content>span{
+    padding: .6rem;
+    font-size: 1.2rem;
+    font-family: 'Merriweather';
+}
+.main-header .content__icon{
+  margin-right: .5rem;
 
+}
+
+.main-header .content__page-title{
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 0.75;
+    padding: .3rem;
+  }
+  .main-header .content__page-title span{
+    
+    text-transform: uppercase;
+  font-weight: 600;
+}
 .main {
   width: 100%;
   
@@ -631,7 +663,8 @@ body {
 .latest-posts__title {
   color: #34558B;
   font-family: "Oswald";
-  font-size: 28px;
+  font-size: 32px;
+  font-weight: 500;
   margin: .5rem;
   padding: .5rem;
   line-height: 1.2;

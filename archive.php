@@ -1,24 +1,15 @@
 <?php
 get_header();
-pageBanner();
-?>
- <!-- <header class='main-header main-header--post'>
-        <div class="header header--post">
-            <h2 class='header__sub-header1 header--tax header__sub-header1--post'>TAX</h2>
-            <h2 class='header__sub-header1 header__sub-header1--legal header__sub-header1--post'>LEGAL</h2>
-            <h1 class='header__main header--tech header__main--post'>TECH</h1>
-            <h2 class='header__sub-header2 header__sub-header2--post'>NA CHŁODNO</h2>
-        <div class="search-title">
+$url = site_url('/blog', 'localhost');
+pageBanner(array(
+    // 'title' => the_archive_title(),
+    'home' => '<div class="content__back-to-blog"><i class="fas fa-home content__icon"></i><p>Wróć do <span>TechBROS Blog<span></p></div>',
+    'arrows' => '>>',
+    'title' => get_the_archive_title(),
+));
 
-            <div class="content">
-                <div class="search-bar">
-                    <input type="text" class="search-bar__input" placeholder="Szukaj" aria-label="search">
-                    <button class="search-bar__submit" aria-label="submit search"><i class="fas fa-search"></i></button>
-            </div>
-            <div class="search-title__title"> -->
-    
-            <h1><?php the_archive_title()?></h1>
-            </div>
+?>
+
         </div>
         
            
