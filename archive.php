@@ -3,7 +3,7 @@ get_header();
 $url = site_url('/blog', 'localhost');
 pageBanner(array(
     // 'title' => the_archive_title(),
-    'home' => '<div class="content__back-to-blog"><i class="fas fa-home content__icon"></i><p>Wróć do <span>TechBROS Blog<span></p></div>',
+    'home' => '<div class="content__back-to-blog"><i class="fas fa-home content__icon"></i><p><span>TechBROS Blog<span></p></div>',
     'arrows' => '>>',
     'title' => get_the_archive_title(),
 ));
@@ -45,11 +45,10 @@ pageBanner(array(
             <?php
             }
             ?>
-            <br><div>
+           <div>
             <?php
             echo paginate_links();
             ?>
-
             </div>
             </section>
        <?php get_sidebar()?>

@@ -1,4 +1,9 @@
 <?php
+function custom_excerpt_length($length){
+    return 30;
+}
+add_filter('excerpt_length', 'custom_excerpt_length', 100);
+
 function wp_custom_archive($args = ''){
     global $wpdb, $wp_locale;
     $defaults = array(
@@ -102,8 +107,8 @@ function techbros_files() {
         
     }else{
         wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/undefined'), NULL, '1.0', true);
-        wp_enqueue_script('tech-bros-js', get_theme_file_uri('/bundled-assets/scripts.9752c0a1c0e6902cd940.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.9752c0a1c0e6902cd940.css'));
+        wp_enqueue_script('tech-bros-js', get_theme_file_uri('/bundled-assets/scripts.0a745cc34166da3bffb3.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.0a745cc34166da3bffb3.css'));
     }
     
     // wp_enqueue_style('techbros_main_styles', get_stylesheet_uri());
