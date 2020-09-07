@@ -137,15 +137,7 @@ wp_reset_postdata();
         <p class="latest-posts__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus ut pulvinar egestas. Aliquam ultrices elit elit, eu elementum risus sodales eget. Curabitur vel tincidunt nisi, in porta turpis. </p>
         <button class="latest-posts__btn btn">Czytaj dalej</button>
         </div> -->
-        <div>
-   <?php
-    echo paginate_links(
-        array(
-            'total'=> $homepagePosts-> max_num_pages,   
-            )
-        );
-    ?>
-    </div>
+
 </section>
 <!-- SIDEBAR -->
 <?php get_sidebar()?>

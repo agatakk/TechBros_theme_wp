@@ -266,19 +266,19 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media screen and (max-width: 1370px){
+  .main-header .call-to-action{
+    width: 38%;
+    transform: translate(15%, 20%)
+  }
+}
 
 .main-header .call-to-action__par {
-  width: 42%;
+  width: 100%;
   height: auto;
   font-size: 16px;
   margin: 20px;
   line-height: 1.4;
-}
-
-@media (min-width: 1919px) {
-  .main-header .call-to-action__par {
-    font-size: 28px;
-  }
 }
 
 .main-header .call-to-action__btn {
@@ -339,6 +339,7 @@ body {
 .main--archives{
   grid-template-rows: 1fr 5%;
 }
+
 .main__pagination{
   grid-area: 2/2/3/3;
   padding: 1rem;
@@ -774,12 +775,24 @@ body {
   }
   .main-header .call-to-action {
     width: 85%;
+    transform: translate(15%, 45%);
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+            
+  }
+}
+@media (min-width: 1919px) {
+  .main-header .call-to-action{
+    transform: translate(15%, 8%);
+    width: 50%;
+  }
+  .main-header .call-to-action__par {
+    font-size: 28px;
+    width: 60%;
   }
 }
 
@@ -900,11 +913,11 @@ body {
   }
   .main-header .call-to-action {
     padding: 0;
-    width: 50%;
+    width:50%;
   }
-  .main-header .call-to-action__par {
+  /* .main-header .call-to-action__par {
     width: 100%;
-  }
+  } */
   .main-header .call-to-action__btn {
     margin-left: calc(100% - 150px);
   }
@@ -1092,7 +1105,7 @@ body {
 @media screen and (min-width: 1366px) {
   .main-header .header--post {
     margin: 0;
-    padding: 15vh;
+    padding: 3rem 15vh;
   }
  
 }
@@ -1104,6 +1117,13 @@ body {
   }
 }
 
+
+@media screen and (min-width: 768px) and (max-width: 1369px){
+  
+  .main-header .call-to-action__btn {
+    margin-left: calc(70% - 150px);
+  }
+}
 .main-header .header__main--post {
   font-size: 125px;
 }
@@ -1136,6 +1156,9 @@ body {
 }
 
 @media (max-width: 414px) {
+  .main-header .call-to-action__par{
+    width: 100%;
+  }
   .main--post {
     margin-top: -5vh;
   }
@@ -1484,6 +1507,15 @@ span.wpcf7-list-item{
 }
 
 @media screen and (min-width: 1366px) {
+  .main-header{
+    padding: 2rem 10vw;
+  }
+  .main-header .call-to-action{
+    transform: translate(15%, 8%);
+  }
+  .main-header .call-to-action__par{
+    width: 63%;
+  }
   .authors-about__author {
     width: 40%;
   }
