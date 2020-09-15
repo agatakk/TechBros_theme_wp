@@ -776,10 +776,7 @@ body {
     margin-left: 1px;
     font-size: 83px;
   }
-  .main-header .header__main {
-    font-size: 215px;
-    font-weight: 500;
-  }
+
   .main-header .call-to-action {
     width: 43%;
     transform: translate(15%, 45%);
@@ -917,7 +914,7 @@ body {
   }
   .main-header .header {
     margin: 0;
-    margin-right: 13%;
+    /* margin-right: 13%; */
   }
 
 .main-header .header__main{
@@ -1515,7 +1512,7 @@ span.wpcf7-list-item{
     height: 80vh;
   }
   .header .header__main{
-    font-size: 160px;
+    font-size: 154px;
   }
   .header .header__sub-header2{
     font-size: 62px;
@@ -1539,7 +1536,7 @@ span.wpcf7-list-item{
     transform: translate(15%, 8%);
   }
   .main-header .call-to-action__par{
-    width: 63%;
+    width: 70%;
     font-size: 19px;
   }
   .authors-about__author {
@@ -1748,5 +1745,63 @@ span.wpcf7-list-item{
 
 .search-bar:focus-within .search-bar__submit {
   background-color: #6EBAF6;
+}
+
+/* header banner as grid */
+@media screen and (min-width: 1024px){
+  .main-header{
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 20% 1fr 20% 1fr; 
+    grid-column-gap: 10%;
+    padding: calc(4rem + 84px) 6rem 4rem 6rem ;
+
+  }
+  .header{
+    grid-area:2/1/4/2;
+    
+  }
+  .main-header .call-to-action{
+    grid-area:3/2/5/3;
+  }
+  .main-header .call-to-action{
+    width:100%;
+    padding:0;
+    margin:0;
+    transform: translate(0%, 0%);
+  }
+}
+@media screen and (min-width: 1366px){
+  .header .header__sub-header2{
+    font-size: 67px;
+  }
+  .header .header__main{
+    font-size: 170px;
+  }
+}
+
+@media screen and (min-width: 1600px){
+  .main-header .header__main {
+    font-size: 195px;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1800px){
+  .main-header{
+    grid-column-gap:3%;
+  }
+  .main-header .header__main {
+    font-size: 215px;
+   
+  }
+  .header .header__sub-header2{
+    font-size:70px;
+    text-align: center;
+    margin: 1vh;
+  }
+  .main-header .call-to-action__par{
+    font-size: 28px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
