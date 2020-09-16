@@ -82,7 +82,7 @@ function pageBanner($args=NULL){
             <h2 class='header__sub-header1 header--tax header__sub-header1--post'>TAX</h2>
             <h2 class='header__sub-header1 header__sub-header1--legal header__sub-header1--post'>LEGAL</h2>
             <h1 class='header__main header--tech header__main--post'>TECH</h1>
-            <h2 class='header__sub-header2 header__sub-header2--post'>NA CHŁODNO</h2>
+            <h2 class='header__sub-header2 header__sub-header2--post'>NA&nbsp;CHŁODNO</h2>
         </div>
         <div class="content">
             <div class="archives_back"><a href="<?php echo site_url('/blog')?>"> <?php echo $args['home']?> </a></div>
@@ -107,8 +107,8 @@ function techbros_files() {
         
     }else{
         wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/undefined'), NULL, '1.0', true);
-        wp_enqueue_script('tech-bros-js', get_theme_file_uri('/bundled-assets/scripts.b8b39a87507d56ff4718.js'), NULL, '1.0', true);
-        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.b8b39a87507d56ff4718.css'));
+        wp_enqueue_script('tech-bros-js', get_theme_file_uri('/bundled-assets/scripts.ad69e8aa19ed5f97fe50.js'), NULL, '1.0', true);
+        wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.ad69e8aa19ed5f97fe50.css'));
     }
     
     // wp_enqueue_style('techbros_main_styles', get_stylesheet_uri());

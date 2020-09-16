@@ -28,7 +28,7 @@ get_header();
             $latestPost ->the_post();?>
 
         <div class="post-info latest-post__box--hpg">
-            <h2 class="post-info__title"> <?php the_title()?></a></h2>
+            <h2 class="post-info__title"> <a href="<?php the_permalink()?>"><?php the_title()?></a></h2>
             <div class="post-info__subtitles">
                 <div>
                     <i class="post-info__icon"><img src="<?php echo get_theme_file_uri('img/calendar.png')?>" alt="icon od a calendar"></i>

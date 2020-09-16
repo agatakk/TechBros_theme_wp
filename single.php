@@ -3,15 +3,10 @@
 get_header();
 
 while(have_posts()){
-    the_post(); ?>
-     <header class='main-header main-header--post'>
-        <div class="header header--post">
-            <h2 class='header__sub-header1 header--tax header__sub-header1--post'>TAX</h2>
-            <h2 class='header__sub-header1 header__sub-header1--legal header__sub-header1--post'>LEGAL</h2>
-            <h1 class='header__main header--tech header__main--post'>TECH</h1>
-            <h2 class='header__sub-header2 header__sub-header2--post'>NA CHŁODNO</h2>
-        </div>
-    </header>
+    the_post(); 
+    pageBanner();
+    ?>
+
     <section class="main main--post">
         <section class="post-content">
             <div class="post-info__subtitles post-info__subtitles--posts post-info__subtitles post-info__subtitles--post-cont">
@@ -27,7 +22,7 @@ while(have_posts()){
             </div>
             <article class="post-content__article">
                 <h3 class="latest-posts__title"><?php the_title()?></h3>
-                <p class="latest-posts__par"><?php the_content()?></p>
+                <div class="latest-posts__par"><?php the_content()?></div>
                  <!-- <p class="latest-posts__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus ut pulvinar egestas. Aliquam ultrices elit elit, eu elementum risus sodales eget. Curabitur vel tincidunt nisi, in porta turpis. </p>
                  <p class="latest-posts__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus ut pulvinar egestas. Aliquam ultrices elit elit, eu elementum risus sodales eget. Curabitur vel tincidunt nisi, in porta turpis. </p>
                  <p class="latest-posts__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus ut pulvinar egestas. Aliquam ultrices elit elit, eu elementum risus sodales eget. Curabitur vel tincidunt nisi, in porta turpis. </p>
