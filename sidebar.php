@@ -63,7 +63,11 @@
         $homepageInfo = new wp_Query(array(
             'posts_per_page'=> 2,
             'post_type' => 'details',
-        ));
+        ));?>
+        <div class="authors__summary-wrapper">
+
+        
+        <?php
 
         while($homepageInfo->have_posts()){
             $homepageInfo->the_post();?>
@@ -89,6 +93,6 @@
         }
 
         ?>
-        
+        </div>
     </div>
     </section>
