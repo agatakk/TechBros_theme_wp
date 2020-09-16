@@ -126,7 +126,7 @@ body {
 .btn {
   background-color: #FF6F64;
   border: 1px solid #FF6F64;
-  height: 45px;
+  min-height: 45px;
   width: 150px;
   color: #FFFFFF;
   font-family: "Merriweather";
@@ -805,8 +805,9 @@ body {
     padding: 0;
     margin: 0;
   }
-  .header .call-to-action__par {
-    width: 60%;
+  .main-header .call-to-action__par {
+    width: 49%;
+    margin: 3vh auto;
   }
   .main {
     -ms-grid-columns: 25% auto;
@@ -921,9 +922,8 @@ body {
   font-size: 101px;
 }
 .header .header__sub-header2{
-  font-size: 39px;
-  letter-spacing: 0;
-  text-align: right;
+  font-size: 40px;
+  text-align: left;
 }
   .main-header .call-to-action {
     padding: 0;
@@ -1760,6 +1760,7 @@ span.wpcf7-list-item{
   }
   .header{
     grid-area:2/1/4/2;
+    max-width: 35vw;
     
   }
   .main-header .call-to-action{
@@ -1771,10 +1772,17 @@ span.wpcf7-list-item{
     margin:0;
     transform: translate(0%, 0%);
   }
+  .header .header__sub-header2 {
+    text-align: center;
+    font-size: 55px;
+    letter-spacing: 4px;
+  }
 }
 @media screen and (min-width: 1366px){
   .header .header__sub-header2{
-    font-size: 67px;
+    font-size: 60px;
+    
+
   }
   .header .header__main{
     font-size: 170px;
@@ -1786,21 +1794,35 @@ span.wpcf7-list-item{
     font-size: 195px;
     font-weight: 500;
   }
+  .header .header__sub-header2{
+    font-size: 67px;
+    /* text-align: center; */
+    letter-spacing: 7px;
+  }
 }
 @media screen and (min-width: 1800px){
   .main-header{
     grid-column-gap:3%;
   }
-  .main-header .header__main {
-    font-size: 215px;
+  /* .main-header .header__main {
+       font-size: 215px; 
    
-  }
+  } */
   .header .header__sub-header2{
     font-size:70px;
-    text-align: center;
-    margin: 1vh;
+    letter-spacing: 3px;
+    
+    
   }
   .main-header .call-to-action__par{
+    font-size: 28px;
+  }
+}
+@media screen and (max-width:320px){
+  .header .header__main{
+    font-size: 73px
+  }
+  .header .header__sub-header2{
     font-size: 28px;
   }
 }

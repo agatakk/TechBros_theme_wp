@@ -6,7 +6,7 @@ get_header();
     <h2 class='header__sub-header1 header--tax'>TAX</h2>
     <h2 class='header__sub-header1 header__sub-header1--legal'>LEGAL</h2>
     <h1 class='header__main header--tech'>TECH</h1>
-    <h2 class='header__sub-header2 header--cool'>NA CHŁODNO</h2>
+    <h2 class='header__sub-header2 header--cool'>NA&nbsp;CHŁODNO</h2>
 </div>
 <div class="call-to-action">
     <p class="call-to-action__par">Czyli wszystko, co chciałeś wiedzieć o tax-techu i legal-techu, ale nie miałeś kogo zapytać.</p>
