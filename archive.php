@@ -15,7 +15,7 @@ pageBanner(array(
            
     </header>
     <!-- MAIN -->
-    <section class="main">
+    <section class="main main--archives">
 
         <section class ='latest-posts latest-posts--archives'>
       
@@ -45,13 +45,13 @@ pageBanner(array(
             <?php
             }
             ?>
-           <div>
-            <?php
-            echo paginate_links();
-            ?>
-            </div>
             </section>
-       <?php get_sidebar()?>
+            <div class='main__pagination'>
+             <?php
+             echo paginate_links();
+             ?>
+             </div>
+            <?php get_sidebar()?>
 
     </section>
 

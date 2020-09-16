@@ -21,19 +21,23 @@ while(have_posts()){
                 </div>
             </div>
             <article class="post-content__article">
-                <h3 class="latest-posts__title"><?php the_title()?></h3>
+                <h3 class="latest-posts__title latest-posts__title--single"><?php the_title()?></h3>
                 <div class="latest-posts__par"><?php the_content()?></div>
-                 <!-- <p class="latest-posts__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus ut pulvinar egestas. Aliquam ultrices elit elit, eu elementum risus sodales eget. Curabitur vel tincidunt nisi, in porta turpis. </p>
-                 <p class="latest-posts__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus ut pulvinar egestas. Aliquam ultrices elit elit, eu elementum risus sodales eget. Curabitur vel tincidunt nisi, in porta turpis. </p>
-                 <p class="latest-posts__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus ut pulvinar egestas. Aliquam ultrices elit elit, eu elementum risus sodales eget. Curabitur vel tincidunt nisi, in porta turpis. </p>
-                 <p class="latest-posts__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus ut pulvinar egestas. Aliquam ultrices elit elit, eu elementum risus sodales eget. Curabitur vel tincidunt nisi, in porta turpis. </p>
-                 <p class="latest-posts__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus ut pulvinar egestas. Aliquam ultrices elit elit, eu elementum risus sodales eget. Curabitur vel tincidunt nisi, in porta turpis. </p> -->
+                <div class="post-content__icons">
+                    <div><span class="post-content__number">15</span><i class="fas fa-comment"></i></div>
+                    <div><span class="post-content__number">15</span><i class="far fa-heart"></i></div>
+                    <div class="post-content__social">
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
                 </article>
                      <div class="post-content__tags-and-categories">
                          <h4 class="post-content__titles">TAGI:</h4>
-                         <p><?php the_tags()?></p>
+                         <p><?php echo get_the_tag_list("",', ')?></p>
                          <h4 class="post-content__titles">KATEGORIE:</h4>
-                         <p><?php echo get_the_category_list()?></p>
+                         <p><?php echo get_the_category_list(', ')?></p>
     
                      </div>
         </section>
