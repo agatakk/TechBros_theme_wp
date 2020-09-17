@@ -4,7 +4,9 @@ get_header();
 
 while(have_posts()){
     the_post(); 
-    pageBanner();
+    pageBanner(array(
+        'title' => get_the_title()
+    ));
     ?>
     <!-- <header class='main-header main-header--post'>
         <div class="header header--post">

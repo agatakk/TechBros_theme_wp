@@ -3,7 +3,9 @@ get_header();
 
 while(have_posts()){
     the_post(); 
-    pageBanner();
+    pageBanner(array(
+        'title'=> get_the_title()
+    ));
     ?>
     
    
@@ -57,21 +59,24 @@ while(have_posts()){
                 $postID = $person->ID;
                 $post_object = get_post($postID);       
                  ?>
-                
+                 <div class="authors-about__wrapper">
                  <div class="authors__name authors-about__name">
-                     <a href="<?php echo get_the_permalink($person)?>">
                      <img src="<?php echo get_the_post_thumbnail_url($person, 'authorSquare'); ?>" alt="Zdjęcie autora">
+                     <div class="autors-about__info-wrapper">
+                  
                      <h4 class="authors-about__title"><?php echo get_the_title($person)?></h4>
-                     </a>
+                     
                      <span class="authors-about__email"><?php echo get_field('email_address', $postID)?></span>
-                     <!-- <h4 class="authors-about__title"><a href="<?php echo get_the_permalink($person)?>"> <?php echo get_the_title($person);?></a></h4> -->
+                     </div>
+                  
                      
                  </div>
-                     <div class="concept__par">
-                    
+                <div class="concept__par">                    
                      <?php  echo $person->post_content;?>
-                     
-                     </div>
+
+                </div>
+
+                 </div>                   
     
              <?php
              }

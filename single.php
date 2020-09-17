@@ -36,6 +36,7 @@ while(have_posts()){
                      <div class="post-content__tags-and-categories">
                          <h4 class="post-content__titles">TAGI:</h4>
                          <p><?php echo get_the_tag_list("",', ')?></p>
+                        </br>
                          <h4 class="post-content__titles">KATEGORIE:</h4>
                          <p><?php echo get_the_category_list(', ')?></p>
     

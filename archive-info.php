@@ -1,21 +1,11 @@
 
 <?php 
 get_header();
+pageBanner(array(
+    'title'=> the_title();
+))
 ?>
-<header class='main-header main-header--post'>
-        <div class="header header--post">
-            <h2 class='header__sub-header1 header--tax header__sub-header1--post'>TAX</h2>
-            <h2 class='header__sub-header1 header__sub-header1--legal header__sub-header1--post'>LEGAL</h2>
-            <h1 class='header__main header--tech header__main--post'>TECH</h1>
-            <h2 class='header__sub-header2 header__sub-header2--post'>NA CHŁODNO</h2>
-        </div>
-        <div class="content">
-            <div class="search-bar">
-                <input type="text" class="search-bar__input" placeholder="Szukaj" aria-label="search">
-                <button class="search-bar__submit" aria-label="submit search"><i class="fas fa-search"></i></button>
-            </div>
-        </div>
-    </header>
+
         <section class="main main--contact">
         <?php
         while (have_posts()){

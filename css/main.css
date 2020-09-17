@@ -308,9 +308,12 @@ body {
   }
   
   .main-header .content__page-title{
-      font-size: 32px;
-      font-weight: 300;
-      padding: .3rem;
+      font-size: 40px;
+      font-weight: 500;
+      padding: .3rem 2rem;
+      /* background-color:#6EBAF6;  */
+      /* text-transform: uppercase; */
+      font-family: 'Merriweather';
     }
 
  
@@ -1228,8 +1231,18 @@ body {
   left: 18%;
   color:#FEBCB4;
 }
+
 .post-content__icons i{
   margin: 0 3px;
+}
+
+.post-content__icons i:hover{
+  color: #FF6F64;
+  cursor: pointer;
+}
+
+.post-content__tags-and-categories .post-content__titles, .post-content__tags-and-categories p{
+  display: inline-block;
 }
 
 .main .post-info__subtitles--post-cont {
@@ -1459,7 +1472,12 @@ span.wpcf7-list-item{
 }
 
 .main .concept__par {
-  line-height: 2.5;
+  line-height: 2;
+  background-color: white;
+}
+
+.main .concept__par p{
+  margin: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1488,7 +1506,10 @@ span.wpcf7-list-item{
             flex-direction: row;
   }
 }
-
+.authors-about__wrapper{
+  margin: 2vh;
+  width: 35%;
+}
 .authors-about__author {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1550,7 +1571,6 @@ span.wpcf7-list-item{
 
 .authors-about__name {
   margin: 0;
-  padding: .5rem;
   line-height: 1.2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1560,7 +1580,7 @@ span.wpcf7-list-item{
           justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1578,11 +1598,27 @@ span.wpcf7-list-item{
 .authors-about__name::after {
   display: none;
 }
-
 .authors-about__title, .authors-about__email {
-  margin: 1rem;
+  margin: 1.5rem;
   font-weight: 200;
 }
+
+@media screen and (min-width: 1366px){
+  .authors-about__name{
+    flex-direction: row-reverse;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .autors-about__info-wrapper{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+  .authors-about__title, .authors-about__email{
+    text-align: right;
+  }
+}
+
 
 .authors-about__title {
   font-size: 20px;
@@ -1595,8 +1631,9 @@ span.wpcf7-list-item{
   height: 2px;
   background-color: #FFFFFF;
   position: absolute;
-  width: 40%;
+  width: 4vw;
   margin-top: 15px;
+  left: 29%;
 }
 
 .authors-about__email {
