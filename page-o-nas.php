@@ -29,7 +29,7 @@ while(have_posts()){
                     
                         ?>
                     <section class="concept">
-                      <h3 class="concept__title"><?php echo get_the_title($info)?></h3>
+                      <h3 class="concept__title concept__title--about"><?php echo get_the_title($info)?></h3>
                         <div class="concept__par">      
                         
                         <?php 
