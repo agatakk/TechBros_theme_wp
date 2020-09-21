@@ -22,7 +22,7 @@
                 <a class="main-menu__link <?php if(is_page('kontakt')) echo 'active'?>"  href="<?php echo site_url('/kontakt')?>">KONTAKT</a>
             </li>
             <li class = 'main-menu__menu-item '>
-                <form action="" class=searchbar-form">
+                <form action="" class="searchbar-form">
                     <input type="text" class="contact-form__input contact-form__input--searchbar" placeholder="Szukaj">
                     <button type="submit" class="contact-form__btn--search"><i class="fas fa-search"></i></button>
                 </form>

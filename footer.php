@@ -6,7 +6,7 @@
         </ul>
         <section class="footer__contact-us footer__info">
             <h4 class="footer__title">SKONTAKTUJ SIĘ</h4>
-            <p class="footer__email-address"><a href="mailto" class="footer__address-link"><?php echo get_field('email_address', $postID)?></a></p>
+            <p class="footer__email-address"><a href="mailto" class="footer__address-link">info@b-sharp.pl</a></p>
         </section>
         <section class="footer__know-us footer__info">
             <h4 class="footer__title">POZNAJ NAS</h4>

@@ -154,6 +154,17 @@ body {
 .btn--nav {
   font-size: 20px;
 }
+.active{
+  /* background-color:#6EBAF6; */
+  padding:1rem;
+}
+.current-btn{
+  background-color:#FEBCB4;
+}
+.main-nav .active::before{
+  opacity:1;
+  width:60%;
+}
 
 .main-header {
   display: -webkit-box;
@@ -1430,22 +1441,24 @@ body {
   display: block;
   margin-top: 1.5rem;
 }
-.searchbar-form{
+.main-menu .searchbar-form{
   margin:0;
   display:flex;
   flex-direction: row;
-  width: auto;
+  width: 100%;
+  text-align: center;
+  height: 60px
 }
 .contact-form__input--searchbar{
   width:60%;
+  margin: 15px 0;
   padding:0.5rem;
   
 }
 
 .contact-form__btn--search{
-  margin:0;
-  margin-left: -1vw;
-  height: auto;
+  margin:15px 0;
+  height: 50%;
   padding: .5rem;
   background-color:#34558B;
   border:1px solid #34558B;
@@ -2024,4 +2037,20 @@ span.wpcf7-list-item{
     font-size: 35px;
   }
 }
+
+.main--page{
+  display: block;
+ }
+
+ .main--page h2, .main--page h3{
+   font-family: 'Oswald', sans-serif;
+   color: #34558B;
+   margin: 3vh 0;
+ }
+
+ .main--page p{
+   margin: 1vh 0;
+ }
+
+
 /*# sourceMappingURL=main.css.map */
