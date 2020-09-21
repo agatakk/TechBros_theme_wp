@@ -73,7 +73,7 @@
             $homepageInfo->the_post();?>
 
             <div class="authors__summary">
-            <h3 class="authors__name"><a href="<?php the_permalink()?>"><?php the_title()?> </a></h3>
+            <h3 class="authors__name"><a href="<?php echo site_url('/o-nas')?>"><?php the_title()?> </a></h3>
            
             <img src="<?php the_post_thumbnail_url()?>" alt="Zdjęcie jednego z autorów" class="authors__img">
             <p class="authors__bio"><?php if(has_excerpt()){
@@ -83,12 +83,7 @@
                 }?>
             </p>
         </div>
-        <!-- <div class="authors__summary">
-            <h3 class="authors__name">WOJCIECH KOKOT</h3>
-            <img src="<?php echo get_theme_file_uri('img/wojciech_kokot.png')?>" alt="Zdjęcie Wojciecha Kokota" class="authors__img img--wojciech">
-            <p class="authors__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus ut pulvinar egestas. Aliquam ultrices elit elit, eu elementum risus sodales eget. um dolor sit amet
-            </p>
-        </div> -->
+       
         <?php
         }
 

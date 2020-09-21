@@ -43,7 +43,7 @@ while(have_posts()){
                      </div>
         </section>
        
-        <?php get_sidebar()?>
+        <?php get_sidebar('for-archives')?>
     </section>
     
     <?php

@@ -51,7 +51,7 @@ pageBanner(array(
              echo paginate_links();
              ?>
              </div>
-            <?php get_sidebar()?>
+            <?php get_sidebar('for-archives')?>
 
     </section>
 
