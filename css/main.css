@@ -303,33 +303,47 @@ body {
 .main-header .call-to-action__btn {
   margin-left: calc(45% - 150px);
 }
-.main-header .content__back-to-blog{
+.main-header--post .content {
+  width: auto;
+  font-size: 8px;
+  padding: 0 10vw;
+  transform: translateY(100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+.main-header--post .content__back-to-blog{
     display: flex;
     align-items: center;
     color: white;
     background-color: #6ebaf6;
-    padding: 0.65rem 1.5rem;
+    padding: 0.65rem 1rem;
     margin: 0 .2rem;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
-.main-header .content__back-to-blog span{
+.main-header--post .content__back-to-blog span{
     font-weight: 400;
     font-family: 'Merriweather';
 }
-.main-header .content>span{
+.main-header--post .content>span{
     padding: .6rem;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     font-family: 'Merriweather';
   }
-  .main-header .content__icon{
+  .main-header--post .content__icon{
     margin-right: .5rem;
   
   }
   
   .main-header .content__page-title{
-      font-size: 40px;
+      font-size: 10px;
       font-weight: 500;
-      padding: .3rem 2rem;
+      padding: .3rem;
       /* background-color:#6EBAF6;  */
       /* text-transform: uppercase; */
       font-family: 'Merriweather';
@@ -338,11 +352,32 @@ body {
  
   .main-header .content__page-title span{
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
 }
+
+@media screen and (min-width: 320px){
+  .main-header--post .content, .main-header--post .content__page-title{
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px){
+  .main-header--post .content, .main-header--post .content__page-title{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1366px){
+  .main-header--post .content, .main-header--post .content__page-title{
+    font-size: 24px;
+  }
+  .main-header--post .content{
+    transform: translateY(245%);
+  }
+}
+ 
+
 .main {
   width: 100%;
-  
   height: auto;
   display: -ms-grid;
   display: grid;
@@ -1717,6 +1752,8 @@ span.wpcf7-list-item{
   left: 36%;
 }
 
+
+
 @media screen and (min-width:768px){
   .authors-about__title::after{
     width: 13vw;
@@ -1781,39 +1818,16 @@ span.wpcf7-list-item{
   font-weight: 400;
 }
 
-.content {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media screen and (min-width: 768px){
-  .main-header .content{
-    margin-left: 6rem;
-    height: 100%;
-    width: auto;
-    display: flex;
-    align-items: center;
-    transform: translateY(100%)
-  }
-  .main-header .content__page-title{
-    font-size: 16px;
-  }
-  .main-header .content__back-to-blog{
-    font-size:10px;
-  }
-}
-@media screen and (min-width: 1140px){
+
+
+/* @media screen and (min-width: 1140px){
   .main-header .content{
     width: 100%;
     transform: translateY(95%);
     padding: 1rem;
   }
 
-}
+} */
 
 .search-bar {
   --size: 40px;
