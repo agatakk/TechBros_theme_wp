@@ -21,17 +21,18 @@
             <li class = 'main-menu__menu-item '>
                 <a class="main-menu__link <?php if(is_page('kontakt')) echo 'active'?>"  href="<?php echo site_url('/kontakt')?>">KONTAKT</a>
             </li>
-            <li class = 'main-menu__menu-item '>
-                <form method="GET" action="<?php echo esc_url(site_url('/'));?>" class="searchbar-form">
-                    <input type="text" class="contact-form__input contact-form__input--searchbar" name="s" placeholder="Szukaj">
-                    <button type="submit" class="contact-form__btn--search"><i class="fas fa-search"></i></button>
-                </form>
+            <li class = 'main-menu__menu-item main-menu__menu-item--search'>
+               <?php get_search_form()?>
             </li>
-           
         </ul>
-        <div class="menu-hamburger">
-            <div class="menu-hamburger__line"></div>
-            <div class="menu-hamburger__line menu-hamburger__line"></div>
-            <div class="menu-hamburger__line menu-hamburger__line"></div>
+        <div class="main-nav__hamburger-search">
+            <div class="menu-hamburger">
+                <div class="menu-hamburger__line"></div>
+                <div class="menu-hamburger__line menu-hamburger__line"></div>
+                <div class="menu-hamburger__line menu-hamburger__line"></div>
+            </div>
+            <div class="main-nav__searchbar-for-mobile">
+            <?php get_search_form()?>
+            </div>
         </div>
     </nav>
