@@ -25,11 +25,12 @@ while(have_posts()){
                 <div class="latest-posts__par"><?php the_content()?></div>
                 <div class="post-content__icons">
                     <div><span class="post-content__number">15</span><i class="fas fa-comment"></i></div>
-                    <div><span class="post-content__number">15</span><i class="far fa-heart"></i></div>
+                    <!-- <div><span class="post-content__number">15</span><i class="far fa-heart"></i></div> -->
                     <div class="post-content__social">
-                    <i class="fab fa-linkedin"></i>
+                    <!-- <i class="fab fa-linkedin"></i>
                     <i class="fab fa-twitter"></i>
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-facebook-f"></i> -->
+                    <?php if(function_exists('sharing_display')){echo sharing_display();}?>
                     </div>
                 </div>
                 </article>

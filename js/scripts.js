@@ -49,3 +49,11 @@ sidebarYears.forEach((year)=>{
         });
     })
 })
+
+//share icons 
+
+const shareIcon = document.querySelector('h3.sd-title');
+
+console.log(shareIcon.textContent);
+
+shareIcon.innerHTML = '<i class="fas fa-share-alt"></i>';
