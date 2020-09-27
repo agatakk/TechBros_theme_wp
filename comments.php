@@ -1,6 +1,29 @@
-<form action="<?php echo site_url('/wp-comments-post.php')?>" method="post" >
-<textarea name="" id="" cols="30" rows="10" class="contact-form__input" placeholder="Twój komentarz"></textarea>
-<input type="text" class="contact-form__input" placeholder="Imię">
-<input type="text" class="contact-form__input" placeholder = 'e-mail'>
-<button type="submit" class="contact-form__btn--comments">Skomentuj</button>
-</form>
+<section id="comments" class="comments-section">
+<?php              
+if(have_comments()){
+    ?>
+    <a href="#commentform" class="commentform-link">Dodaj komentarz</a>
+    <ol class='comments-list'>
+        <?php
+        wp_list_comments();
+        ?>
+    </ol>
+    <?php
+}
+    $commenter = wp_get_current_commenter();
+// $req = get_option('require_name_email');
+        comment_form(
+             array(
+
+                'comment_field' => '<p class="comment-form-author"> <textarea id="comment" rows="10" class="contact-form__input" name="comment" aria-required="true" placeholder="Wpisz komentarz"></textarea></p>',
+                'fields' => array(
+                   
+                    'author' => '<input type="text" name="author" class="contact-form__input" value ="'. esc_attr($commenter['comment_author']) .'" placeholder="Twoje imię">',
+                    'email' =>'<input type="text" name="email" class="contact-form__input" value ="'. esc_attr($commenter['comment_author_email']) .'" placeholder="Twój email">',
+        
+                ),
+                'label_submit' => 'Opublikuj',    
+            )
+        );
+?>
+</section>

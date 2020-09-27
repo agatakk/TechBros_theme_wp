@@ -24,7 +24,7 @@ while(have_posts()){
                 <h3 class="latest-posts__title latest-posts__title--single"><?php the_title()?></h3>
                 <div class="latest-posts__par"><?php the_content()?></div>
                 <div class="post-content__icons">
-                    <div><span class="post-content__number">15</span><i class="fas fa-comment"></i></div>
+                    <a href="#comments-section"><div><span class="post-content__number"><?php echo get_comments_number()?></span><i class="fas fa-comment"></i></div></a>
                     <!-- <div><span class="post-content__number">15</span><i class="far fa-heart"></i></div> -->
                     <div class="post-content__social">
                     <!-- <i class="fab fa-linkedin"></i>
@@ -42,8 +42,8 @@ while(have_posts()){
                          <p><?php echo get_the_category_list(', ')?></p>
     
                 </section>
-                <section class="comments">
-                    <?php comments_template()?>
+                <section class="comments" id="comments-section">
+               <?php comments_template() ?>
                 </section>
 
         </section>
