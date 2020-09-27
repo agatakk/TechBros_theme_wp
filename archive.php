@@ -38,7 +38,7 @@ pageBanner(array(
                     <div class="latest-posts__par"><?php
                     the_excerpt();
                     ?> </div>
-                    <button class="latest-posts__btn btn"><a href="<?php the_permalink()?>">Czytaj dalej</a> </button>
+                    <a href="<?php the_permalink()?>"><button class="latest-posts__btn btn">Czytaj dalej</button></a>
                 </div>
 
 

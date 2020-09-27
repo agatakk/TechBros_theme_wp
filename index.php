@@ -30,7 +30,7 @@ pageBanner(array(
                     echo wp_trim_words(get_the_content(), 30);
                     ?>
                 </div>
-                    <button class="latest-posts__btn btn">Czytaj dalej</button>
+                <a href="<?php the_permalink()?>"> <button class="latest-posts__btn btn">Czytaj dalej</button></a>
                 </div>
 
 

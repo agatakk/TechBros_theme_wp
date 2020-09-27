@@ -34,14 +34,18 @@ while(have_posts()){
                     </div>
                 </div>
                 </article>
-                     <div class="post-content__tags-and-categories">
+                <section class="post-content__tags-and-categories">
                          <h4 class="post-content__titles">TAGI:</h4>
                          <p><?php echo get_the_tag_list("",', ')?></p>
                         </br>
                          <h4 class="post-content__titles">KATEGORIE:</h4>
                          <p><?php echo get_the_category_list(', ')?></p>
     
-                     </div>
+                </section>
+                <section class="comments">
+                    <?php comments_template()?>
+                </section>
+
         </section>
        
         <?php get_sidebar('for-archives')?>
