@@ -10,7 +10,7 @@ get_header();
 </div>
 <div class="call-to-action">
     <p class="call-to-action__par">Czyli wszystko, co chciałeś wiedzieć o tax-techu i legal-techu, ale nie miałeś kogo zapytać.</p>
-    <button class="call-to-action__btn btn">Wchodzę!</button>
+    <button class="call-to-action__btn btn"><a href="<?php echo site_url('/blog')?>">Wchodzę!</a></button>    
 </div>
 </header>
 <!-- MAIN -->
@@ -42,7 +42,7 @@ get_header();
         </div>
         <div class="abstract latest-post__box--hpg">
             <p class="abstract__par par"><?php echo wp_trim_words(get_the_content(), 30)?> </p>
-            <button class="abstract__btn btn"><a href="<?php the_permalink()?>"> Czytaj dalej</a></button>
+            <a href="<?php the_permalink()?>"><button class="abstract__btn btn"> Czytaj dalej</button></a>
         </div>
     <?php       
     }
