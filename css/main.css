@@ -1357,13 +1357,19 @@ min-height: 40vh;
 }
 
 .post-content__icons{
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
   position: absolute;
-  bottom: -7px;
-  left: 18%;
+  bottom: -5px;
+  left: 10%;
   color:#FEBCB4;
+}
+
+@media screen and (min-width: 320px){
+  .post-content__icons{
+    left: 8%;
+  }
 }
 
 .post-content__icons i{
@@ -1376,8 +1382,18 @@ min-height: 40vh;
 }
 
 /* alignment of my icons to jetpack icons*/
-.post-content__icons div{
-  line-height: 2;;
+.post-content__icons .post-content__social{
+  line-height: 2;
+  margin-left: 10vw;
+}
+@media screen and (min-width: 320px){
+  .post-content__icons .post-content__social{
+  
+    margin-left:0;
+  }
+}
+.post-content__icons .post-content__comment-summary{
+  line-height: 2.5;
 }
 
 .post-content__tags-and-categories .post-content__titles, .post-content__tags-and-categories p{
@@ -2160,25 +2176,42 @@ span.wpcf7-list-item{
   display: flex;
   flex-direction: row;
 }
+.sd-content ul{
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+  margin:0;
+}
+.jp-sharing-input-touch .sd-content ul li{
+  margin: 0;
+  padding: 0;
+}
 
 h3.sd-title{
   color: #34558B;
   margin:0;
 }
-h3.sd-title::before{
- border-top: 1px solid #fff !important;
+div.sharedaddy h3.sd-title:before{
+  border-top: 1px solid #fff !important;
+  width:auto;
 }
+
 h3.sd-title i:hover{
   cursor: default;
   color: inherit;
 }
+
 .sd-social-icon .sd-content ul li[class*='share-'].share-twitter a.sd-button, .sd-social-icon .sd-content ul li[class*='share-'].share-facebook a.sd-button, .sd-social-icon .sd-content ul li[class*='share-'].share-linkedin a.sd-button{
   background: none;
   color: #FEBCB4 !important;
+ 
 }
 
 .sd-social-icon .sd-content ul li[class*='share-'].share-twitter a.sd-button:hover, .sd-social-icon .sd-content ul li[class*='share-'].share-linkedin a.sd-button:hover, .sd-social-icon .sd-content ul li[class*='share-'].share-facebook a.sd-button:hover{
   color:#FF6F64 !important;
+}
+.sd-social-icon .sd-content ul li[class*='share-'] a, .sd-social-icon .sd-content ul li[class*='share-'] a:hover, .sd-social-icon .sd-content ul li[class*='share-'] div.option a{
+  padding: 3px;
 }
 
 .sd-content .share-customize-link{

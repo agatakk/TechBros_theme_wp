@@ -8,7 +8,7 @@
 </head>
 <body style="background-image: url(<?php echo get_theme_file_uri('~/../img/brain-chip-icon.png')?>)" > 
 <nav class='main-nav'>
-        <a href="<?php echo get_home_url();?>"><img src="<?php echo get_theme_file_uri('~/../img/Group53.png')?>" alt="logo" class="main-nav__logo"></a>
+        <a href="<?php echo get_home_url();?>"><img src="<?php echo get_theme_file_uri('~/../img/Group53@2x.png')?>" alt="logo" class="main-nav__logo"></a>
         <ul class="main-menu">
             <li class = 'main-menu__menu-item main-menu__menu-item--blog '>
                 <a class="main-menu__link--btn" href="<?php echo site_url('/blog')?>">
@@ -31,8 +31,8 @@
                 <div class="menu-hamburger__line menu-hamburger__line"></div>
                 <div class="menu-hamburger__line menu-hamburger__line"></div>
             </div>
-            <div class="main-nav__searchbar-for-mobile">
+            <!-- <div class="main-nav__searchbar-for-mobile">
             <?php get_search_form()?>
-            </div>
+            </div> -->
         </div>
     </nav>

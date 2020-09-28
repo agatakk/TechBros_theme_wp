@@ -24,7 +24,7 @@ while(have_posts()){
                 <h3 class="latest-posts__title latest-posts__title--single"><?php the_title()?></h3>
                 <div class="latest-posts__par"><?php the_content()?></div>
                 <div class="post-content__icons">
-                    <a href="#comments-section"><div><span class="post-content__number"><?php echo get_comments_number()?></span><i class="fas fa-comment"></i></div></a>
+                    <a href="#comments-section"><div class="post-content__comment-summary"><span class="post-content__number"><?php echo get_comments_number()?></span><i class="fas fa-comment"></i></div></a>
                     <!-- <div><span class="post-content__number">15</span><i class="far fa-heart"></i></div> -->
                     <div class="post-content__social">
                     <!-- <i class="fab fa-linkedin"></i>
