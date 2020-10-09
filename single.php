@@ -43,7 +43,11 @@ while(have_posts()){
     
                 </section>
                 <section class="comments" id="comments-section">
-               <?php comments_template() ?>
+               <?php 
+               if(comments_open()){
+                   comments_template(); 
+               }              
+               ?>
                 </section>
 
         </section>

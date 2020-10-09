@@ -21,9 +21,7 @@
             <h4 class="footer__title">ZNAJDŹ NAS</h4>
             <div class='footer__icons'>
                 <i class="fab fa-linkedin"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook-f"></i>
-                
+                <i class="fab fa-twitter"></i>                
             </div>
         </section>
     </footer>

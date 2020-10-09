@@ -17,7 +17,7 @@ while(have_posts()){
                 <h3 class="concept__title"><?php the_title()?></h3>
                 <div class="concept__par">
                    <?php the_content()?>
-                
+           
                 </div>
             </section>
             <section>

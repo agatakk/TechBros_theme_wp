@@ -1,13 +1,26 @@
-<section id="comments" class="comments-section">
-<?php              
+
+    
+    <?php              
 if(have_comments()){
     ?>
-    <a href="#commentform" class="commentform-link">Dodaj komentarz</a>
-    <ol class='comments-list'>
+    <h3 class="comments__title">
         <?php
-        wp_list_comments();
+        printf(
+            'Komentarze na temat wpisu <span class="comments__post-title">' . get_the_title() . '</span>' 
+        )        
         ?>
-    </ol>
+    </h3>
+    <a href="#commentform" class="commentform-link">Dodaj komentarz</a>
+    <div class='comments-list'>
+        <?php
+        $args = array(
+            
+            'style'  => 'div',
+            'reverse_top_level' => true,
+        );
+        wp_list_comments($args);
+        ?>
+    </div>
     <?php
 }
     $commenter = wp_get_current_commenter();
@@ -26,4 +39,3 @@ if(have_comments()){
             )
         );
 ?>
-</section>

@@ -63,7 +63,10 @@
         $homepageInfo = new wp_Query(array(
             'posts_per_page'=> 2,
             'post_type' => 'details',
-        ));?>
+        ));
+        
+        ?>
+        
         <div class="authors__summary-wrapper">
 
         
