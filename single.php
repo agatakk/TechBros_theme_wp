@@ -30,7 +30,8 @@ while(have_posts()){
                     <!-- <i class="fab fa-linkedin"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-facebook-f"></i> -->
-                    <?php if(function_exists('sharing_display')){echo sharing_display();}?>
+                    <!-- <?php if(function_exists('sharing_display')){echo sharing_display();}?> -->
+                    <?php social_warfare()?>
                     </div>
                 </div>
                 </article>

@@ -19,6 +19,7 @@ while(have_posts()){
            
             $infoLoopNew = new WP_Query(array(
                 'post_type' => 'page',
+                'name' => 'o-nas',
             ));
                  
             while($infoLoopNew->have_posts()){
@@ -64,7 +65,7 @@ while(have_posts()){
                   
                      <h4 class="authors-about__title"><?php echo get_the_title($person)?></h4>
                      
-                     <a href="mailto:<?php the_field('email_address', $postID); ?>"><span class="authors-about__email"><?php echo get_field('email_address', $postID)?></span></a>
+                     <span class="authors-about__email"><a href="mailto:<?php the_field('email_address', $postID); ?>"><?php echo get_field('email_address', $postID)?></a></span>
                      </div>
                   
                      

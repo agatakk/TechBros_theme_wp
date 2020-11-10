@@ -20,7 +20,7 @@ while(have_posts()){
         <div>
         <?php
         echo do_shortcode(
-            '[contact-form-7 id="94" title="Skontaktuj się z nami" html_class="contact-form"]'
+            '[contact-form-7 id="5" title="Contact-form" html_class="contact-form"]'
         )
         ?>
         </div>
