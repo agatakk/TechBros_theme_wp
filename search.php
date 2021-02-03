@@ -13,7 +13,7 @@ if(have_posts()){
     
     while(have_posts()){
         the_post(); ?>   
-            <section class="post-content">
+            <section class="post-content post-content__search">
               
             <?php get_template_part('template-parts/content', get_post_type()); ?>
     

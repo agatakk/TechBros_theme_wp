@@ -2,15 +2,19 @@
 get_header();
 ?>
 <header class='main-header'>
+<!-- <div class="main-header___inner"> -->
 <div class="header">
     <h2 class='header__sub-header1 header--tax'>TAX</h2>
     <h2 class='header__sub-header1 header__sub-header1--legal'>LEGAL</h2>
     <h1 class='header__main header--tech'>TECH</h1>
     <h2 class='header__sub-header2 header--cool'>NA&nbsp;CHŁODNO</h2>
+
 </div>
+
 <div class="call-to-action">
     <p class="call-to-action__par">Czyli wszystko, co chciałeś wiedzieć o tax-techu i legal-techu, ale nie miałeś kogo zapytać.</p>
     <button class="call-to-action__btn btn"><a href="<?php echo site_url('/blog')?>">Wchodzę!</a></button>    
+</div>
 </div>
 </header>
 <!-- MAIN -->

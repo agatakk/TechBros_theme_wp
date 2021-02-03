@@ -28,6 +28,7 @@ body {
   padding: .5rem;
   padding-bottom: .7rem;
   background-color: rgba(190, 201, 217, 0.95);
+
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -370,6 +371,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
 
 .latest-post__box--hpg {
   height: 80%;

@@ -630,6 +630,13 @@ min-height: 40vh;
           align-items: center;
 }
 
+@media screen and (min-width:1920px)
+{
+  .latest-post{
+    background: none;
+  }
+}
+
 .latest-post__box--hpg {
   height: 80%;
   -webkit-box-shadow: 0 3px 8px rgba(1, 1, 1, 0.3);
@@ -1372,6 +1379,11 @@ min-height: 40vh;
 
 .post-content__tags-and-categories .post-content__titles, .post-content__tags-and-categories p{
   display: inline-block;
+}
+
+.main .post-content__search{
+  background: none;
+  box-shadow: none;
 }
 
 .main .post-info__subtitles--post-cont {
