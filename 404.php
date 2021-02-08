@@ -9,7 +9,7 @@ get_header();
 <ul class="error-message__explanation-list">
     <li class="error-message__item"> <i class="fas fa-bug"></i> Strona nie istniała, nie istnieje lub została usunięta</li>
     <li class="error-message__item"> <i class="fas fa-bug"></i> Strona jest jest już gdzieś indziej</li>
-    <li class="error-message__item"><i class="fas fa-bug">Trwają prace techniczne związane z tą stroną</li>
+    <li class="error-message__item"><i class="fas fa-bug"></i> Trwają prace techniczne związane z tą stroną</li>
 </ul>
 <h3 class="error-message_subtitle-explanation">Co możesz zrobić?</h3>
 <ul class="error-message__explanation-list">
