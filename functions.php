@@ -109,7 +109,7 @@ function pageBanner($args=NULL){
 function techbros_files() {
     wp_enqueue_style('custom_google_fonts_raleway', 'https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
     wp_enqueue_style('custom_google_fonts_oswald', 'https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap');
-    wp_enqueue_style('custom_google_fonts_merriweather', 'https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,400&display=swap');
+    wp_enqueue_style('custom_google_fonts_merriweather', 'https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&display=swap');
     wp_enqueue_style('font-awsome', 'https://use.fontawesome.com/releases/v5.14.0/css/all.css"');
     
     if(strstr($_SERVER['SERVER_NAME'], 'localhost')){

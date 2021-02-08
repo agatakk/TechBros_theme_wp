@@ -213,10 +213,11 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
-  font-family: "Merriweather";
+  font-family: "Merriweather", serif;
   font-size: 47px;
   color: #6EBAF6;
   letter-spacing: 3px;
+  font-weight:900;
 }
 
 .main-header .call-to-action {
