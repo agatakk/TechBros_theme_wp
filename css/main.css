@@ -285,6 +285,7 @@ body {
   -ms-grid-column-span: 3;
   grid-column: 1/4;
   font-family: "Merriweather";
+  font-weight:900;
   font-size: 47px;
   color: #6EBAF6;
   letter-spacing: 3px;
