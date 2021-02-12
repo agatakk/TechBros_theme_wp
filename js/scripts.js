@@ -1,5 +1,4 @@
 import "../css/main.css"
-console.log('działa');
 
 //menu navigation mobile
 const burger = document.querySelector('.menu-hamburger');
@@ -8,10 +7,6 @@ const menuItems = document.querySelectorAll('.main-menu__menu-item');
 const lines = document.querySelectorAll('.menu-hamburger div')
 
 const line1 = document.querySelector(".main-nav .menu-hamburger__line:first-child.toggle");
-
-
-
-console.log(lines);
 
 
 const navSlideIn = function(){
@@ -53,7 +48,5 @@ sidebarYears.forEach((year)=>{
 //share icons 
 
 const shareIcon = document.querySelector('h3.sd-title');
-
-console.log(shareIcon.textContent);
 
 shareIcon.innerHTML = '<i class="fas fa-share-alt"></i>';
